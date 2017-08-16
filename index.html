@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Coding &amp; Cocktails Drink Order App</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/lib/jquery.bxslider/jquery.bxslider.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+		<link rel="stylesheet" href="assets/styles/main.css">
+	</head>
+	<body>
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid text-center">
+      			<ul class="nav navbar-nav">
+        			<li><a href="#">Home</a></li>
+        			<li><a href="#menu-section">Menu</a></li>
+        			<li><a href="#about">About</a></li>
+        			<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- HEADER -->
+		<div class="row">
+			<div class="container">
+				<h1 class="text-center">Welcome to Coding &amp; Cocktails!</h1>
+				<img src="assets/images/cocktails_small.png">
+
+				<ul class="bxslider">
+				  <li><img src="assets/images/Cocktail.png" title="Strong Lady"/></li>
+				  <li><img src="assets/images/cocktail-list.png" title="Cocktail List"/></li>
+				  <li><img src="assets/images/preparation.png" title="Yum!"/></li>
+				  <li><img src="assets/images/ingredients.png" title="Cocktail Ingredients"/></li>
+				</ul>
+				<div class="text-center" id="order-details"></div>
+			</div>
+		</div>
+
+		<!-- MENU -->
+		<div class="row" id="menu-section">
+			<div class="container text-center">
+				<div class="center-block">
+					<button class="btn btn-default btn-toggle" id="show-menu-btn">Show Menu</button>
+					<button class="btn btn-default btn-toggle" id="hide-menu-btn">Hide Menu</button>
+				</div>
+			</div>
+			<div id="menu">
+				<div>
+					<h2 class="text-center">Menu</h2>
+					<div class="input-group checkbox-group">
+						<label class="checkbox" id="focusedLady">
+						  <input type="checkbox" value="focusedLady">
+						  Focused Lady
+						</label>
+						<label class="checkbox" id="strongLady">
+						  <input type="checkbox" value="strongLady">
+						  Strong Lady
+						</label>
+						<label class="checkbox" id="frontEndPunch">
+						  <input type="checkbox" value="frontEndPunch">
+						  Front-End Punch
+						</label>
+						<label class="checkbox" id="cachedOut">
+						  <input type="checkbox" value="cachedOut">
+						  Cached Out
+						</label>
+						<label class="checkbox" id="httPapaya">
+						  <input type="checkbox" value="httPapaya">
+						  httPAPAYA://
+						</label>
+						<label class="checkbox" id="nerdyDaiquiri">
+						  <input type="checkbox" value="nerdyDaiquiri">
+						  Nerdy Daiquiri
+						</label>
+						<label class="checkbox" id="theAvernaCode">
+						  <input type="checkbox" value="theAvernaCode">
+						  The Averna Code
+						</label>
+						<label class="checkbox" id="focusedTheMostest">
+						  <input type="checkbox" value="focusedTheMostest">
+						  Focused the Mostest
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ATTENDEES -->
+		<div class="row">
+			<div class="container">
+			<h2 class="text-center">Add your name to the attendee list below.</h2>
+				<div class="input-group">
+					<label class="radio" id="adaLovelace">
+					  <input type="radio" name="attendee" value="Ada Lovelace">
+					  Ada Lovelace
+					</label>
+					<label class="radio" id="graceHopper">
+					  <input type="radio" name="attendee" value="Grace Hopper">
+					  Grace Hopper
+					</label>
+					<label class="radio" id="jeanBartik">
+					  <input type="radio" name="attendee" value="Jean Bartik">
+					  Jean Bartik
+					</label>
+				</div>
+			</div>
+			
+			<!-- BUTTONS -->
+			<button class="btn btn-default center-block btn-order" id="order-btn">Order</button>
+			<!-- <h4>Your drink is...</h4>
+			<button onclick="updateStatus('none')" class="none">None</button>
+			<button onclick="updateStatus('queued')" class="queued">Queued</button>
+			<button onclick="updateStatus('ready')" class="ready">Ready</button> -->
+		</div>
+
+		<!-- About -->
+		<div class="row">
+			<div class="container text-center" id="about">
+				<p>Coding &amp; Cocktails is a program designed to help women learn the skills they need to become a front-end developer.  We also enjoy tasty cocktails made by our bartender, Laura Wagner. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat totam, in facilis quod aliquam omnis laudantium harum ratione neque, illo nisi rerum eveniet voluptas quis. Vero corporis nesciunt consequatur iusto.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero incidunt cumque cum minus sint tempore, ea rerum exercitationem porro in. Recusandae dolorum optio iste deserunt sint nesciunt distinctio praesentium, tempora? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, earum commodi itaque, blanditiis accusantium vero ut dolorum, sed ducimus ullam error aliquid minus voluptate maiores neque. Aliquam doloribus, animi quas.</p>
+			</div>
+		</div>
+
+		<!-- Contact -->
+		<footer id="contact">
+			<div class="row">
+				<div class="container text-center" id="contact">
+					<p>&copy; 2017 Coding &amp; Cocktails</p>
+					<ul class="list-inline center-block">
+						<li><a href="mailto:codingandcocktails@kcwomenintech.org" target="_blank"><i class="fa fa-envelope fa-3x"></i></a></li>
+						<li><a href="https://twitter.com/codecocktailskc" target="_blank"><i class="fa fa-twitter fa-3x"></i></a></li>
+						<li><a href="https://www.facebook.com/codingandcocktailsKC" target="_blank"><i class="fa fa-facebook fa-3x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="https://use.fontawesome.com/28322a6135.js"></script>
+		<script src="assets/lib/jquery-3.2.1.min.js"></script>
+		<script src="assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+		<script src="assets/scripts/my-scripts.js"></script>
+	</body>
+</html>
